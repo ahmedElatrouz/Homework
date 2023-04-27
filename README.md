@@ -18,15 +18,17 @@ The following endpoints are available:
 
 **Parameters**
 - siret	: string - The SIRET ID of the company
+
 **Response**
-- siret	: string - The SIRET ID of the company
-- conventions : array - An array of convention objects
+- siret	: string - The SIRET ID of the company.
+- conventions : array - An array of convention objects.
 
 ***POST /api/v1/company/store/csv***
 : Writes company data to a CSV file.
 
 **Request Param**
-- siret : string - The SIRET ID of the company
+- siret : string - The SIRET ID of the company.
+
 **Response**
 - If successful, the response will contain a message indicating that the CSV file was written.
 
