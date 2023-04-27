@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: companyStorageService
+  kafka:
+    bootstrap-servers: localhost:9092
+
+csv:
+  file:
+    name: companies.csv
+
+companyInfo:
+  api:
+    url: https://siret2idcc.fabrique.social.gouv.fr/api/v2/
