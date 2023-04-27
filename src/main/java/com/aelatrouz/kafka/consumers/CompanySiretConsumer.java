@@ -18,7 +18,7 @@ public class CompanySiretConsumer {
 	@Autowired
 	private CompanyApiClient companyApiClient;
 
-	@KafkaListener(topics = "codes")
+	@KafkaListener(topics = "siretCodes")
 	public void consume(String code) {
 		List<CompanyDto> companyDtos = companyApiClient.getCompanyData(code);
 		csvWriter.writeToFile(companyDtos);
